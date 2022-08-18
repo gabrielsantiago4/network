@@ -14,6 +14,13 @@
 		3646643828AE644600844B17 /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646643728AE644600844B17 /* NetworkTests.swift */; };
 		3646644228AE644600844B17 /* NetworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646644128AE644600844B17 /* NetworkUITests.swift */; };
 		3646644428AE644600844B17 /* NetworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646644328AE644600844B17 /* NetworkUITestsLaunchTests.swift */; };
+		3646645328AE655600844B17 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646645228AE655600844B17 /* ApiService.swift */; };
+		3646645628AE6D1800844B17 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646645528AE6D1800844B17 /* UserModel.swift */; };
+		3646645828AE6FFB00844B17 /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646645728AE6FFB00844B17 /* PostModel.swift */; };
+		3646645B28AE73C000844B17 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646645A28AE73C000844B17 /* UsersView.swift */; };
+		3646645D28AE796D00844B17 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646645C28AE796D00844B17 /* PostsView.swift */; };
+		3646645F28AE825600844B17 /* NewUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646645E28AE825600844B17 /* NewUserView.swift */; };
+		3646646228AE899A00844B17 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646646128AE899A00844B17 /* UserController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		3646643D28AE644600844B17 /* NetworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3646644128AE644600844B17 /* NetworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUITests.swift; sourceTree = "<group>"; };
 		3646644328AE644600844B17 /* NetworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3646645228AE655600844B17 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		3646645528AE6D1800844B17 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		3646645728AE6FFB00844B17 /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		3646645A28AE73C000844B17 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		3646645C28AE796D00844B17 /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
+		3646645E28AE825600844B17 /* NewUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserView.swift; sourceTree = "<group>"; };
+		3646646128AE899A00844B17 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +88,10 @@
 		3646641A28AE644500844B17 = {
 			isa = PBXGroup;
 			children = (
-				3646645028AE645200844B17 /* New Group */,
+				3646646028AE898900844B17 /* Controller */,
+				3646645928AE738D00844B17 /* View */,
+				3646645428AE6CEE00844B17 /* Model */,
+				3646645028AE645200844B17 /* Service */,
 				3646642528AE644500844B17 /* Network */,
 				3646643628AE644600844B17 /* NetworkTests */,
 				3646644028AE644600844B17 /* NetworkUITests */,
@@ -128,11 +145,39 @@
 			path = NetworkUITests;
 			sourceTree = "<group>";
 		};
-		3646645028AE645200844B17 /* New Group */ = {
+		3646645028AE645200844B17 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				3646645228AE655600844B17 /* ApiService.swift */,
 			);
-			path = "New Group";
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3646645428AE6CEE00844B17 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3646645528AE6D1800844B17 /* UserModel.swift */,
+				3646645728AE6FFB00844B17 /* PostModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3646645928AE738D00844B17 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3646645A28AE73C000844B17 /* UsersView.swift */,
+				3646645C28AE796D00844B17 /* PostsView.swift */,
+				3646645E28AE825600844B17 /* NewUserView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3646646028AE898900844B17 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3646646128AE899A00844B17 /* UserController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +310,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3646646228AE899A00844B17 /* UserController.swift in Sources */,
+				3646645F28AE825600844B17 /* NewUserView.swift in Sources */,
+				3646645D28AE796D00844B17 /* PostsView.swift in Sources */,
 				3646642928AE644500844B17 /* ContentView.swift in Sources */,
+				3646645828AE6FFB00844B17 /* PostModel.swift in Sources */,
 				3646642728AE644500844B17 /* NetworkApp.swift in Sources */,
+				3646645628AE6D1800844B17 /* UserModel.swift in Sources */,
+				3646645328AE655600844B17 /* ApiService.swift in Sources */,
+				3646645B28AE73C000844B17 /* UsersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
