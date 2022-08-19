@@ -11,7 +11,7 @@ import SwiftUI
 struct NetworkApp: App {
     var body: some Scene {
         WindowGroup {
-            NewUserView()
+            UsersView()
         }
     }
 }

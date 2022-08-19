@@ -12,32 +12,7 @@ struct NewUserView: View {
     @State var email = ""
     @State var password = ""
     var body: some View {
-        VStack {
-            HStack {
-                NavigationLink {
-                    //
-                } label: {
-                    Text("Back")
-                        .bold()
-                        .foregroundColor(.blue)
-                }
-                .padding()
-                Spacer()
-                Text("Sign Up")
-                    .bold()
-                    .font(.title)
-                    .foregroundColor(.black)
-                Spacer()
-                NavigationLink {
-                    
-                } label: {
-                    Text("Go!")
-                        .bold()
-                        .foregroundColor(.blue)
-                }
-                .padding()
-
-            }
+        NavigationView {
             Form {
                 Section(header: Text("Name: ").bold(), content: {
                     TextField("", text: $name)
@@ -45,21 +20,48 @@ struct NewUserView: View {
                         .multilineTextAlignment(.center)
                 })
                 .textFieldStyle(.automatic)
-                
+
                 Section(header: Text("Password: ").bold(), content: {
                     SecureField("", text: $password)
                         .font(.subheadline)
                         .multilineTextAlignment(.center)
                 })
                 .textFieldStyle(.automatic)
-                
+
                 Section(header: Text("Email: ").bold(), content: {
                     TextField("", text: $email)
                         .font(.subheadline)
                         .multilineTextAlignment(.center)
                 })
                 .textFieldStyle(.automatic)
-
+            }
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    NavigationLink {
+                       // não fazer nada.
+                    } label: {
+                        Text("Back")
+                            .bold()
+                            .foregroundColor(.blue)
+                    }
+                }
+                ToolbarItem(placement: .principal) {
+                    Text("Sign Up")
+                        .bold()
+                        .font(.title)
+                        .foregroundColor(.black)
+                }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink {
+                        if true {
+                            ContentView(confirm: ["Matheus", "Matheus@email", "Senha"], flag: true)
+                        }
+                    } label: {
+                        Text("GO!")
+                            .bold()
+                            .foregroundColor(.blue)
+                    }
+                }
             }
         }
     }

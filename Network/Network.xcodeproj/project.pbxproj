@@ -21,6 +21,8 @@
 		3646645D28AE796D00844B17 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646645C28AE796D00844B17 /* PostsView.swift */; };
 		3646645F28AE825600844B17 /* NewUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646645E28AE825600844B17 /* NewUserView.swift */; };
 		3646646228AE899A00844B17 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3646646128AE899A00844B17 /* UserController.swift */; };
+		EEEED13D28AF149800EB6481 /* TokenHandlerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEED13C28AF149800EB6481 /* TokenHandlerModel.swift */; };
+		EEEED13F28AF605800EB6481 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEED13E28AF605800EB6481 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		3646645C28AE796D00844B17 /* PostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		3646645E28AE825600844B17 /* NewUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserView.swift; sourceTree = "<group>"; };
 		3646646128AE899A00844B17 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
+		EEEED13C28AF149800EB6481 /* TokenHandlerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenHandlerModel.swift; sourceTree = "<group>"; };
+		EEEED13E28AF605800EB6481 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,10 +92,6 @@
 		3646641A28AE644500844B17 = {
 			isa = PBXGroup;
 			children = (
-				3646646028AE898900844B17 /* Controller */,
-				3646645928AE738D00844B17 /* View */,
-				3646645428AE6CEE00844B17 /* Model */,
-				3646645028AE645200844B17 /* Service */,
 				3646642528AE644500844B17 /* Network */,
 				3646643628AE644600844B17 /* NetworkTests */,
 				3646644028AE644600844B17 /* NetworkUITests */,
@@ -112,8 +112,11 @@
 		3646642528AE644500844B17 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				3646646028AE898900844B17 /* Controller */,
+				3646645928AE738D00844B17 /* View */,
+				3646645428AE6CEE00844B17 /* Model */,
+				3646645028AE645200844B17 /* Service */,
 				3646642628AE644500844B17 /* NetworkApp.swift */,
-				3646642828AE644500844B17 /* ContentView.swift */,
 				3646642A28AE644600844B17 /* Assets.xcassets */,
 				3646642C28AE644600844B17 /* Preview Content */,
 			);
@@ -158,6 +161,7 @@
 			children = (
 				3646645528AE6D1800844B17 /* UserModel.swift */,
 				3646645728AE6FFB00844B17 /* PostModel.swift */,
+				EEEED13C28AF149800EB6481 /* TokenHandlerModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -165,9 +169,11 @@
 		3646645928AE738D00844B17 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3646642828AE644500844B17 /* ContentView.swift */,
 				3646645A28AE73C000844B17 /* UsersView.swift */,
 				3646645C28AE796D00844B17 /* PostsView.swift */,
 				3646645E28AE825600844B17 /* NewUserView.swift */,
+				EEEED13E28AF605800EB6481 /* LoginView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -310,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEEED13D28AF149800EB6481 /* TokenHandlerModel.swift in Sources */,
 				3646646228AE899A00844B17 /* UserController.swift in Sources */,
 				3646645F28AE825600844B17 /* NewUserView.swift in Sources */,
 				3646645D28AE796D00844B17 /* PostsView.swift in Sources */,
@@ -317,6 +324,7 @@
 				3646645828AE6FFB00844B17 /* PostModel.swift in Sources */,
 				3646642728AE644500844B17 /* NetworkApp.swift in Sources */,
 				3646645628AE6D1800844B17 /* UserModel.swift in Sources */,
+				EEEED13F28AF605800EB6481 /* LoginView.swift in Sources */,
 				3646645328AE655600844B17 /* ApiService.swift in Sources */,
 				3646645B28AE73C000844B17 /* UsersView.swift in Sources */,
 			);
@@ -485,6 +493,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -514,6 +523,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
