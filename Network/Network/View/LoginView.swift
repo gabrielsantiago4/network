@@ -40,7 +40,7 @@ struct LoginView: View {
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
                     NavigationLink {
-                       // não fazer nada.
+                       // supostamente um dismiss.
                     } label: {
                         Text("Back")
                             .bold()
@@ -50,7 +50,7 @@ struct LoginView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink {
                         if true {
-                            ContentView(confirm: ["Matheus@email", "Senha"], flag: false)
+                            ContentView(confirm: [email, password], flag: false)
                         }
                     } label: {
                         Text("GO!")

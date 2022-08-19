@@ -54,7 +54,7 @@ struct NewUserView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     NavigationLink {
                         if true {
-                            ContentView(confirm: ["Matheus", "Matheus@email", "Senha"], flag: true)
+                            ContentView(confirm: [name, email, password], flag: true)
                         }
                     } label: {
                         Text("GO!")
